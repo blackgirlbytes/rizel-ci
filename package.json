@@ -1,6 +1,6 @@
 {
   "name": "@blackgirlbytes/theweeknum",
-  "version": "0.1.0",
+  "version": "1.2.7",
   "description": "a package that tells you the week number",
   "scripts": {
     "test": "jest",
