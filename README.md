@@ -1,4 +1,4 @@
-<h1 align="center">@github-craftwork/theweeknum 👋</h1>
+# @blackgirlbytes/weekNum
 <p>
   <a href="https://www.npmjs.com/package/theweeknum">
     <img alt="Version" src="https://img.shields.io/npm/v/theweeknum.svg">
