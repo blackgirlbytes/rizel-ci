@@ -67,7 +67,7 @@ jobs:
       - name: Prepare update
         run: |
           sed -i "s|\"version\": \"[^\"]*\"|\"version\": \"${{ env.VERSION }}\"|" package.json
-          sed -i "s|const SDK_VERSION = '[^']*'|const SDK_VERSION = '${{ env.VERSION }}'|" push-notifications.js
+          sed -i "s|const SDK_VERSION = '[^']*'|const SDK_VERSION = '${{ env.VERSION }}'|" index.js
           sed -i "s|'pusher-push-notifications-node [^']*'|'pusher-push-notifications-node ${{ env.VERSION }}'|g" __tests__/*.js
       - name: Commit changes
         run: |
