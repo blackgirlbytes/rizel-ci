@@ -68,10 +68,10 @@ jobs:
         run: |
           sed -i "s|\"version\": \"[^\"]*\"|\"version\": \"${{ env.VERSION }}\"|" package.json
           sed -i "s|const SDK_VERSION = '[^']*'|const SDK_VERSION = '${{ env.VERSION }}'|" index.js
-          sed -i "s|'pusher-push-notifications-node [^']*'|'pusher-push-notifications-node ${{ env.VERSION }}'|g" __tests__/*.js
+          sed -i "s|'pusher-push-notifications-node [^']*'|'pusher-push-notifications-node ${{ env.VERSION }}'|g" index.test.js
       - name: Commit changes
         run: |
-          git add CHANGELOG.md README.md package.json push-notifications.js __tests__/*.js
+          git add CHANGELOG.md README.md package.json index.js index.test.js
           git commit -m "Bump to version ${{ env.VERSION }}"
       - name: Push
         run: git push
